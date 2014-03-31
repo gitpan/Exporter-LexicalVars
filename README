@@ -24,6 +24,12 @@ SYNOPSIS
             }
         
             print Dumper($pi);        # 3
+        
+            {
+                    use MyVars qw( $foo );
+                    print Dumper($pi);     # 3
+                    print Dumper($foo);    # Hello world
+            }
 
 DESCRIPTION
     Exports lexical (`my`) variables.

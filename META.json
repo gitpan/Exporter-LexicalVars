@@ -51,7 +51,7 @@
    "provides" : {
       "Exporter::LexicalVars" : {
          "file" : "lib/Exporter/LexicalVars.pm",
-         "version" : "0.000_01"
+         "version" : "0.000_02"
       }
    },
    "release_status" : "testing",
@@ -70,5 +70,5 @@
          "web" : "https://github.com/tobyink/p5-exporter-lexicalvars"
       }
    },
-   "version" : "0.000_01"
+   "version" : "0.000_02"
 }

@@ -25,7 +25,7 @@ my $meta = {
                         test      => { requires => { "Test::More" => 0.96 } },
                       },
   "provides"       => {
-                        "Exporter::LexicalVars" => { file => "lib/Exporter/LexicalVars.pm", version => "0.000_01" },
+                        "Exporter::LexicalVars" => { file => "lib/Exporter/LexicalVars.pm", version => "0.000_02" },
                       },
   "release_status" => "testing",
   "resources"      => {
@@ -41,7 +41,7 @@ my $meta = {
                                         },
                         X_identifier => "http://purl.org/NET/cpan-uri/dist/Exporter-LexicalVars/project",
                       },
-  "version"        => "0.000_01",
+  "version"        => "0.000_02",
 };
 
 my %dynamic_config;
