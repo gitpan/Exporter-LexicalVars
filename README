@@ -48,6 +48,24 @@ DESCRIPTION
     initialize them to empty, but otherwise you must initialize them with an
     initializer coderef; not a non-reference scalar value.
 
+    Exporter-style "tags" may also be defined:
+
+            BEGIN {
+                    package MyVars;
+                    use Exporter::LexicalVars -setup => {
+                            '$pi'     => sub { ... },
+                            '$e'      => sub { ... },
+                            ':maths'  => [qw( $pi $e )],
+                    };
+            };
+        
+            use MyVars qw( :maths );
+            use MyVars -maths;           # this works too
+
+    A tag called `:all` will be automatically set up for you. If your exporter
+    is called without any arguments, then it will export a tag called
+    `:default` if it exists, or `:all` otherwise.
+
 BUGS
     Please report any bugs to
     <http://rt.cpan.org/Dist/Display.html?Queue=Exporter-LexicalVars>.

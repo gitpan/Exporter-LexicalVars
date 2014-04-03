@@ -14,3 +14,4 @@ dist.ini
 doap.ttl
 lib/Exporter/LexicalVars.pm
 t/01basic.t
+t/02tags.t
