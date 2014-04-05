@@ -25,9 +25,9 @@ my $meta = {
                         test      => { requires => { "Test::More" => 0.96 } },
                       },
   "provides"       => {
-                        "Exporter::LexicalVars" => { file => "lib/Exporter/LexicalVars.pm", version => "0.000_03" },
+                        "Exporter::LexicalVars" => { file => "lib/Exporter/LexicalVars.pm", version => 0.001 },
                       },
-  "release_status" => "testing",
+  "release_status" => "stable",
   "resources"      => {
                         bugtracker   => {
                                           web => "http://rt.cpan.org/Dist/Display.html?Queue=Exporter-LexicalVars",
@@ -41,7 +41,7 @@ my $meta = {
                                         },
                         X_identifier => "http://purl.org/NET/cpan-uri/dist/Exporter-LexicalVars/project",
                       },
-  "version"        => "0.000_03",
+  "version"        => 0.001,
 };
 
 my %dynamic_config;
